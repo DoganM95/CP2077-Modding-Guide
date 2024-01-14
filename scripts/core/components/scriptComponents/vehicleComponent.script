@@ -493,6 +493,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		return NULL;
 	}
 
+	// TODO: to be used with vehicle godmode
 	public static function PlayerPassengerHasGodModeFromCheatSystem( gi : GameInstance, vehicleID : EntityID, gmType : gameGodModeType ) : Bool
 	{
 		var godModeSystem : GodModeSystem;
@@ -520,6 +521,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		return godModeSources.Contains( 'cheat system' );
 	}
 
+	// TODO: may be necessary for being able to be summoned
 	public static function CanBeDriven( gi : GameInstance, ownerID : EntityID ) : Bool
 	{
 		var vehicle : weak< VehicleObject >;
@@ -530,6 +532,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		return CanBeDriven( gi, vehicle );
 	}
 
+	// TODO: may be necessary for being able to be summoned
 	public static function CanBeDriven( gi : GameInstance, vehicle : weak< VehicleObject > ) : Bool
 	{
 		if( ( ( ( ( ( !( vehicle ) || vehicle.IsDestroyed() ) || ( vehicle.GetAIComponent().GetReservedSeatsCount() > 0 ) ) || HasActiveAutopilot( gi, vehicle ) ) || IsExecutingAnyCommand( gi, vehicle ) ) || vehicle.IsPerformingSceneAnimation() ) || !( vehicle.CommandsFromDriverEnabled() ) )
@@ -1580,6 +1583,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		return true;
 	}
 
+	// TODO: possible to add events on shoot action
 	protected event OnWeaponShootEvent( evt : VehicleMountedWeaponShootEvent )
 	{
 		var broadcaster : StimBroadcasterComponent;
@@ -2829,6 +2833,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		QuickHackableQueueHelper.RemoveQuickhackQueue( NULL, currentlyUploadingAction );
 	}
 
+	// TODO: possible to set/remove action on car (/player?) death
 	protected event OnDeath( evt : gameDeathEvent )
 	{
 		ToggleSiren( false, false );
@@ -3170,6 +3175,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		}
 	}
 
+	// TODO: can be used to set godmode on driven car
 	private function SetImmortalityMode()
 	{
 		var recordID : TweakDBID;
@@ -4069,6 +4075,7 @@ class VehicleComponent extends ScriptableDeviceComponent
 		UpdateDamageEngineEffects();
 	}
 
+	// TODO: possible to make cars always summonable with no delay
 	protected event OnSummonStartedEvent( evt : SummonStartedEvent )
 	{
 		if( evt.state == vehicleSummonState.EnRoute || evt.state == vehicleSummonState.AlreadySummoned )

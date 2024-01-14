@@ -810,6 +810,7 @@ class QuickSlotsManager extends ScriptableComponent
 		}
 	}
 
+	// TODO: perhaps the list of callable vehicles, remove any restriction here
 	public const function GetVehicleWheel( vehicleWheel : ref< array< QuickSlotCommand > > )
 	{
 		var i : Int32;
@@ -965,6 +966,7 @@ class QuickSlotsManager extends ScriptableComponent
 		return wheelCommand;
 	}
 
+	// TODO. set SummonVehicle param true to force summon
 	protected function ExecuteCommand( const command : ref< QuickSlotCommand > )
 	{
 		switch( command.ActionType )
@@ -1052,6 +1054,7 @@ class QuickSlotsManager extends ScriptableComponent
 		}
 	}
 
+	// TODO: use to force summon
 	public function SummonVehicle( force : Bool )
 	{
 		var dpadAction : DPADActionPerformed;
@@ -1146,6 +1149,7 @@ class QuickSlotsManager extends ScriptableComponent
 		eqSystem.QueueRequest( request );
 	}
 
+	// TODO: perhaps necessarily false on some vehicles to not crash the game
 	private function IsPhoneAvailable() : Bool
 	{
 		var journalMgr : JournalManager;
