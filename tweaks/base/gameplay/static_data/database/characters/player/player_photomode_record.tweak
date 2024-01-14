@@ -1,0 +1,34 @@
+package Character
+using RTDB, BaseStats
+
+Player_Puppet_Photomode : TPP_Player
+{
+	fk< GenderEntity >[] genders = 
+	[
+		{
+			initial = true;
+			gender = "Gender.Female";
+			[ EP1 ]
+			entity = "ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent";
+		}, 
+		{
+			gender = "Gender.Male";
+			[ EP1 ]
+			entity = "ep1\characters\entities\player\photo_mode\player_ma_photomode_ep1.ent";
+		}
+	];
+	persistentName = "PhotomodePuppet";
+}
+
+Johnny_Puppet_Photomode : TPP_Player
+{
+	entityTemplatePath = "base\characters\entities\player\photo_mode\johnny_photomode.ent";
+	persistentName = "PhotomodePuppet";
+}
+
+Nibbles_Puppet_Photomode : TPP_Player
+{
+	entityTemplatePath = "base\quest\minor_quests\mq000\characters\nibbles.ent";
+	persistentName = "PhotomodePuppet";
+}
+

@@ -1,0 +1,349 @@
+package Items
+using RTDB, BaseStats, Prereqs, Perks, Effectors
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterBase : SystemReplacementModule
+{
+	displayName = "LocKey#94425";
+	localizedDescription = "LocKey#94425";
+	iconPath = "cw_os_capacity_booster";
+	tags += 
+	[
+		"CapacityBooster", "IllegalItem"
+	];
+	upgradeCostMult = 2.5f;
+	variants = 
+	[
+		"Variants.Humanity0Cost"
+	];
+	usesVariants = true;
+	placementSlots = 
+	[
+		"AttachmentSlots.SystemReplacementCW"
+	];
+	entityName = "cyberware_dummy";
+	isCoreCW = true;
+	slotPartList = 
+	[
+		"Items.GenericRootSlotItem"
+	];
+	statModifiers = 
+	[
+		{
+			statType = "BaseStats.IsItemIconic";
+			modifierType = "Additive";
+			value = 1f;
+		} : ConstantStatModifier, 
+		{
+			statType = "BaseStats.Humanity";
+			modifierType = "Additive";
+			refStat = "BaseStats.CapacityBoosterHumanity";
+			refObject = "Self";
+			opSymbol = "*";
+			value = 1.0f;
+		} : CombinedStatModifier
+	];
+	OnLooted += 
+	[
+		{
+			effectors = 
+			[
+				{
+					prereqRecord = 
+					{
+						statusEffect = "BaseStatusEffect.JustLootedIconicCWFromAirdrop";
+					} : StatusEffectPrereq;
+					fact = "capacity_booster_airdropped";
+					value = 1;
+				} : SetFactEffector
+			];
+		}
+	];
+	buyPrice += 
+	[
+		{
+			statType = "BaseStats.Price";
+			modifierType = "Multiplier";
+			id = "cyberware_curves";
+			column = "high_humanity_to_price_mult";
+			refStat = "BaseStats.Quality";
+			refObject = "Item";
+		} : CurveStatModifier
+	];
+	sellPrice += 
+	[
+		{
+			statType = "BaseStats.Price";
+			modifierType = "Multiplier";
+			id = "cyberware_curves";
+			column = "high_humanity_to_price_mult";
+			refStat = "BaseStats.Quality";
+			refObject = "Item";
+		} : CurveStatModifier
+	];
+	CName cyberwareType = "CapacityBooster";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterUncommon : CapacityBoosterBase
+{
+	quality = "Quality.Uncommon";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 40.f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					40
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterUncommonPlus";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterUncommonPlus : CapacityBoosterBase
+{
+	quality = "Quality.UncommonPlus";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 43f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					43
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterRare";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterRare : CapacityBoosterBase
+{
+	quality = "Quality.Rare";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 47f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					47
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterRarePlus";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterRarePlus : CapacityBoosterBase
+{
+	quality = "Quality.RarePlus";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 50.f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					50
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterEpic";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterEpic : CapacityBoosterBase
+{
+	quality = "Quality.Epic";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 54.f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					54
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterEpicPlus";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterEpicPlus : CapacityBoosterBase
+{
+	quality = "Quality.EpicPlus";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 57.f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					57
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterLegendary";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterLegendary : CapacityBoosterBase
+{
+	quality = "Quality.Legendary";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 60.f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					60
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterLegendaryPlus";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterLegendaryPlus : CapacityBoosterBase
+{
+	quality = "Quality.LegendaryPlus";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 65.f;
+		} : ConstantStatModifier
+	];
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					65
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "Items.CapacityBoosterLegendaryPlusPlus";
+}
+
+[ notQueryable ]
+[ EP1 ]
+CapacityBoosterLegendaryPlusPlus : CapacityBoosterBase
+{
+	quality = "Quality.LegendaryPlusPlus";
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.CapacityBoosterHumanity";
+			modifierType = "Additive";
+			value = 70.f;
+		} : ConstantStatModifier
+	];
+	float amountOfCapacityGivenForRipperdocUI = 70f;
+	OnEquip = 
+	[
+		{
+			UIData = 
+			{
+				localizedDescription = "LocKey#94451";
+				intValues = 
+				[
+					70
+				];
+			};
+		} : GameplayLogicPackage
+	];
+	nextUpgradeItem = "";
+}
+

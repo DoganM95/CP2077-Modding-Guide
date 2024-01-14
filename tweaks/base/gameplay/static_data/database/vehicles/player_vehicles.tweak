@@ -1,0 +1,652 @@
+package Vehicle
+using RTDB
+
+v_sport1_herrera_outlaw_player : v_sport1_herrera_outlaw
+{
+	savable = true;
+	appearanceName = "herrera_outlaw__basic_player_01";
+}
+
+v_sport1_quadra_turbo_player : v_sport1_quadra_turbo
+{
+	savable = true;
+	appearanceName = "quadra_turbo_basic_player_02";
+}
+
+v_sport1_quadra_turbo_r_player : v_sport1_quadra_turbo_r
+{
+	savable = true;
+	appearanceName = "quadra_turbo_basic_player";
+}
+
+v_sport1_rayfield_aerondight_player : v_sport1_rayfield_aerondight
+{
+	savable = true;
+	appearanceName = "rayfield_aerondight__basic_player_01";
+	displayName = "LocKey#1615";
+}
+
+v_sport1_rayfield_caliburn_player : v_sport1_rayfield_caliburn
+{
+	savable = true;
+	appearanceName = "rayfield_caliburn__basic_player_01";
+}
+
+v_sport1_rayfield_caliburn_02_player : v_sport1_rayfield_caliburn
+{
+	savable = true;
+	fk< UIIcon > icon = "UIIcon.rayfield_caliburn__basic_ma_bls_ina_se1_40";
+	appearanceName = "rayfield_caliburn__basic_ma_bls_ina_se1_40";
+	displayName = "LocKey#95884";
+}
+
+v_sport2_mizutani_shion_player : v_sport2_mizutani_shion_tdr
+{
+	savable = true;
+}
+
+v_sport2_mizutani_shion_nomad_player : v_sport2_mizutani_shion_nomad
+{
+	savable = true;
+	appearanceName = "mizutani_shion_nomad_player_01";
+}
+
+v_sport2_mizutani_shion_nomad_02_player : v_sport2_mizutani_shion_nomad_buggy
+{
+	savable = true;
+	fk< UIIcon > icon = "UIIcon.mizutani_shion_nomad_player_02";
+	appearanceName = "mizutani_shion_nomad_player_02";
+}
+
+v_sport2_mizutani_shion_nomad_player_missiles : v_sport2_mizutani_shion_nomad_samum
+{
+	savable = true;
+}
+
+v_sport2_porsche_911turbo_player : v_sport2_porsche_911turbo
+{
+	savable = true;
+}
+
+v_sport2_porsche_911turbo_cabrio_player : v_sport2_porsche_911turbo_cabrio
+{
+	fk< UIIcon > icon = "UIIcon.porsche_911turbo__basic_alt";
+	savable = true;
+}
+
+v_sport2_quadra_type66_player : v_sport2_quadra_type66_rowley
+{
+	savable = true;
+}
+
+v_sport2_quadra_type66_nomad_ncu_player : v_sport2_quadra_type66_sampson
+{
+	savable = true;
+	appearanceName = "quadra_type66__basic_sampson";
+}
+
+v_sport2_quadra_type66_02_player : v_sport2_quadra_type66_bulleat
+{
+	savable = true;
+	appearanceName = "quadra_type66__basic_bulleat";
+}
+
+v_sport2_quadra_type66_avenger_player : v_sport2_quadra_type66_avenger
+{
+	savable = true;
+	appearanceName = "quadra_type66_vtech_noralee";
+}
+
+v_sport2_quadra_type66_nomad_player : v_sport2_quadra_type66_nomad
+{
+	savable = true;
+	appearanceName = "quadra_type66_nomad_player_01";
+}
+
+v_sport2_quadra_type66_nomad_tribute : v_sport2_quadra_type66_nomad_kb
+{
+	savable = true;
+}
+
+v_sport2_quadra_type66_nomad_player_03 : v_sport2_quadra_type66_nomad
+{
+	fk< UIIcon > icon = "UIIcon.v_sport2_quadra_type66_nomad_player_03";
+	savable = true;
+	displayName = "LocKey#93151";
+	appearanceName = "quadra_type66_nomad_player_03";
+}
+
+v_sport2_villefort_alvarado_player : v_sport2_villefort_alvarado
+{
+	savable = true;
+	appearanceName = "villefort_alvarado__basic_player_01";
+}
+
+v_sport2_villefort_alvarado_valentinos_player : v_sport2_villefort_alvarado_valentinos_cabrio
+{
+	savable = true;
+	appearanceName = "villefort_alvarado__basic_valentinos_02";
+}
+
+v_standard25_mahir_supron_player : v_standard25_mahir_supron
+{
+	savable = true;
+	appearanceName = "mahir_supron__basic_player_01";
+	vehWheelDimensionsSetup = 
+	{
+		frontPreset = 
+		{
+			tireRadius = 0.32f;
+			rimRadius = 0.255f;
+			tireWidth = 0.20f;
+			wheelOffset = 0.07f;
+		} : VehicleWheelDimensionsPreset;
+		backPreset = 
+		{
+			tireRadius = 0.32f;
+			rimRadius = 0.255f;
+			tireWidth = 0.20f;
+			wheelOffset = 0.07f;
+		} : VehicleWheelDimensionsPreset;
+	} : VehicleWheelDimensionsSetup;
+}
+
+v_standard25_thorton_colby_nomad_player : v_standard25_thorton_colby_nomad_mule
+{
+	appearanceName = "thorton_colby_pickup_nomad_player_01";
+	savable = true;
+}
+
+v_standard25_thorton_colby_nomad_player_missiles : v_standard25_thorton_colby_nomad_vulture
+{
+	savable = true;
+}
+
+v_standard25_villefort_columbus_player : v_standard25_villefort_columbus
+{
+	savable = true;
+	appearanceName = "villefort_columbus__basic_player_01";
+}
+
+v_standard2_archer_hella_player : v_standard2_archer_hella_getto
+{
+	savable = true;
+}
+
+v_standard2_archer_quartz_player : v_standard2_archer_quartz_gt
+{
+	savable = true;
+	appearanceName = "archer_quartz__basic_player_01";
+	fxWheelsDecals = "Vehicle.FxWheels_Radial_L";
+	vehWheelDimensionsSetup = 
+	{
+		frontPreset = 
+		{
+			tireRadius = 0.35f;
+			rimRadius = 0.24f;
+			tireWidth = 0.28f;
+			wheelOffset = 0.12f;
+		} : VehicleWheelDimensionsPreset;
+		backPreset = 
+		{
+			tireRadius = 0.35f;
+			rimRadius = 0.24f;
+			tireWidth = 0.37f;
+			wheelOffset = 0.12f;
+		} : VehicleWheelDimensionsPreset;
+	} : VehicleWheelDimensionsSetup;
+}
+
+v_standard2_archer_bandit_player : v_standard2_archer_bandit
+{
+	savable = true;
+}
+
+v_standard2_archer_quartz_nomad_player : v_standard2_archer_quartz_nomad
+{
+	fk< UIIcon > icon = "UIIcon.v_standard2_archer_quartz_nomad_player";
+	savable = true;
+	appearanceName = "archer_quartz_nomad_player_01_missiles";
+}
+
+v_standard2_archer_quartz_nomad_player_02 : v_standard2_archer_quartz_nomad_wraith
+{
+	fk< UIIcon > icon = "UIIcon.v_standard2_archer_quartz_nomad_player02";
+	savable = true;
+	headlightColor = 
+	[
+		171, 255, 235, 255
+	];
+	appearanceName = "archer_quartz_nomad_player_02";
+}
+
+v_standard2_chevalier_thrax_player : v_standard2_chevalier_thrax
+{
+	savable = true;
+	appearanceName = "chevalier_thrax__basic_player_01";
+	vehWheelDimensionsSetup = 
+	{
+		frontPreset = 
+		{
+			tireRadius = 0.42f;
+			rimRadius = 0.30f;
+			tireWidth = 0.27f;
+			wheelOffset = 0.06f;
+		} : VehicleWheelDimensionsPreset;
+		backPreset = 
+		{
+			tireRadius = 0.42f;
+			rimRadius = 0.30f;
+			tireWidth = 0.35f;
+			wheelOffset = -0.05f;
+		} : VehicleWheelDimensionsPreset;
+	} : VehicleWheelDimensionsSetup;
+}
+
+v_standard2_makigai_maimai_player : v_standard2_makigai_maimai_gt
+{
+	savable = true;
+	appearanceName = "makigai_maimai__basic_player_01";
+}
+
+v_standard2_thorton_colby_player : v_standard2_thorton_colby
+{
+	savable = true;
+	appearanceName = "thorton_colby__basic_player_01";
+	vehDriveModelData = "Vehicle.VehicleDriveModelData_Colby_Players";
+	vehWheelDimensionsSetup = 
+	{
+		frontPreset = 
+		{
+			tireRadius = 0.35f;
+			rimRadius = 0.24f;
+			tireWidth = 0.25f;
+			wheelOffset = -0.02f;
+		} : VehicleWheelDimensionsPreset;
+		backPreset = 
+		{
+			tireRadius = 0.35f;
+			rimRadius = 0.24f;
+			tireWidth = 0.25f;
+		} : VehicleWheelDimensionsPreset;
+	} : VehicleWheelDimensionsSetup;
+}
+
+v_standard25_thorton_colby_pickup_player : v_standard25_thorton_colby_pickup
+{
+	savable = true;
+	appearanceName = "thorton_colby_pickup_player_01";
+}
+
+v_standard25_thorton_colby_pickup_02_player : v_standard25_thorton_colby_pickup
+{
+	savable = true;
+	fk< UIIcon > icon = "UIIcon.thorton_colby_pickup_ma_bls_ina_se1_44";
+	appearanceName = "thorton_colby_pickup_ma_bls_ina_se1_44";
+	displayName = "LocKey#95883";
+}
+
+v_standard2_thorton_galena_player : v_standard2_thorton_galena
+{
+	savable = true;
+	fxWheelsDecalsFrontOverride = "Vehicle.FxWheels_Radial_S";
+	fxWheelsDecals = "Vehicle.FxWheels_Radial_L";
+	vehWheelDimensionsSetup = 
+	{
+		frontPreset = 
+		{
+			tireRadius = 0.32f;
+			rimRadius = 0.24f;
+			tireWidth = 0.23f;
+			wheelOffset = 0.06f;
+		} : VehicleWheelDimensionsPreset;
+		backPreset = 
+		{
+			tireRadius = 0.32f;
+			rimRadius = 0.24f;
+			tireWidth = 0.34f;
+			wheelOffset = 0.07f;
+		} : VehicleWheelDimensionsPreset;
+	} : VehicleWheelDimensionsSetup;
+	vehDriveModelData = 
+	{
+		wheelSetup = 
+		{
+			frontPreset = 
+			{
+			} : VehicleWheelDrivingPreset_Galena_Front;
+			backPreset = 
+			{
+				visualSuspensionCompressionLength = 0.05f;
+			} : VehicleWheelDrivingPreset_Galena_Rear;
+		} : VehicleWheelDrivingSetup_4_FWD;
+	} : VehicleDriveModelData_Galena;
+	appearanceName = "thorton_galena__basic_player_01";
+}
+
+v_standard2_thorton_galena_bobas_player : v_standard2_thorton_galena_bobas
+{
+	savable = true;
+	appearanceName = "thorton_galena__basic_q000_galena_bobas";
+}
+
+v_standard2_thorton_galena_nomad_player : v_standard2_thorton_galena_nomad_red_green
+{
+	savable = true;
+}
+
+v_standard2_thorton_galena_nomad_player_missiles : v_standard2_thorton_galena_nomad_locust
+{
+	savable = true;
+}
+
+v_standard2_villefort_cortes_player : v_standard2_villefort_cortes
+{
+	savable = true;
+	appearanceName = "villefort_cortes__basic_player_01";
+}
+
+v_standard2_villefort_cortes_delamain_player : v_standard2_villefort_cortes_delamain
+{
+	savable = true;
+	appearanceName = "villefort_cortes__basic_delamain";
+}
+
+v_standard3_chevalier_emperor_player : v_standard3_chevalier_emperor
+{
+	savable = true;
+	appearanceName = "chevalier_emperor__basic_player_01";
+}
+
+v_standard3_thorton_mackinaw_player : v_standard3_thorton_mackinaw
+{
+	savable = true;
+	appearanceName = "thorton_mackinaw__basic_player_01";
+	fxWheelsDecalsFrontOverride = "Vehicle.FxWheels_Radial_M";
+	fxWheelsDecals = "Vehicle.FxWheels_Radial_XL";
+	vehWheelDimensionsSetup = 
+	{
+		frontPreset = 
+		{
+			tireRadius = 0.39f;
+			rimRadius = 0.28f;
+			tireWidth = 0.29f;
+			wheelOffset = 0.04f;
+		} : VehicleWheelDimensionsPreset;
+		backPreset = 
+		{
+			tireRadius = 0.41f;
+			rimRadius = 0.28f;
+			tireWidth = 0.4f;
+			wheelOffset = 0.15f;
+		} : VehicleWheelDimensionsPreset;
+	} : VehicleWheelDimensionsSetup;
+}
+
+v_standard3_thorton_mackinaw_ncu_player : v_standard3_thorton_mackinaw_nomad_ncu
+{
+	savable = true;
+}
+
+v_standard3_thorton_mackinaw_02_player : v_standard3_thorton_mackinaw_nomad_ncu
+{
+	displayName = "LocKey#22082";
+	savable = true;
+	appearanceName = "thorton_mackinaw_nomad_saguaro_01";
+	fk< UIIcon > icon = "UIIcon.thorton_mackinaw_nomad_saguaro";
+}
+
+v_utility4_thorton_mackinaw_bmf_player : v_utility4_thorton_mackinaw_bmf
+{
+	fk< UIIcon > icon = "UIIcon.v_utility4_thorton_mackinaw_bmf_player";
+	savable = true;
+	appearanceName = "thorton_mackinaw_bmf_bmf_01";
+}
+
+v_sportbike3_brennan_apollo_player : v_sportbike3_brennan_apollo
+{
+	savable = true;
+	appearanceName = "brennan_apollo_basic_player_01";
+}
+
+v_sportbike3_brennan_apollo_nomad_player : v_sportbike3_brennan_apollo_scorpion
+{
+	savable = true;
+}
+
+v_sportbike3_brennan_apollo_player_02 : v_sportbike3_brennan_apollo_sport
+{
+	destroyedAppearance = "brennan_apollo_basic_burnt_player_02";
+	appearanceName = "brennan_apollo_basic_player_02";
+	savable = true;
+}
+
+v_sportbike2_arch_player : v_sportbike2_arch
+{
+	savable = true;
+	appearanceName = "arch_nemesis_basic_player_01";
+}
+
+v_sportbike2_arch_jackie_player : v_sportbike2_arch_jackie
+{
+	savable = true;
+	appearanceName = "arch_nemesis_basic_jackie";
+}
+
+v_sportbike2_arch_jackie_tuned_player : v_sportbike2_arch_jackie_tuned
+{
+	savable = true;
+	appearanceName = "arch_nemesis_basic_jackie_tuned_up";
+}
+
+v_sportbike2_arch_tyger_player : v_sportbike2_arch_tyger
+{
+	savable = true;
+	appearanceName = "arch_nemesis_basic_tygerclaws_boss_01";
+}
+
+v_sportbike2_arch_player_02 : v_sportbike2_arch_sport
+{
+	fk< UIIcon > icon = "UIIcon.arch_nemesis_player_02";
+	appearanceName = "arch_nemesis_basic_player_02";
+	savable = true;
+	headlightColor = 
+	[
+		255, 0, 0, 255
+	];
+}
+
+v_sportbike2_arch_player_03 : v_sportbike2_arch_tyger
+{
+	fk< UIIcon > icon = "UIIcon.arch_nemesis_player_03";
+	appearanceName = "arch_nemesis_basic_player_03";
+	savable = true;
+	displayName = "LocKey#95761";
+}
+
+v_sportbike1_yaiba_kusanagi_player : v_sportbike1_yaiba_kusanagi
+{
+	savable = true;
+	appearanceName = "yaiba_kusanagi_basic_player_01";
+}
+
+v_sportbike1_yaiba_kusanagi_tyger_player : v_sportbike1_yaiba_kusanagi_tyger
+{
+	savable = true;
+	appearanceName = "yaiba_kusanagi_basic_tyger_01";
+}
+
+v_sportbike1_yaiba_kusanagi_player_02 : v_sportbike1_yaiba_kusanagi_animal
+{
+	destroyedAppearance = "yaiba_kusanagi_basic_burnt_player_02";
+	savable = true;
+	fk< UIIcon > icon = "UIIcon.yaiba_player_02";
+	appearanceName = "yaiba_kusanagi_basic_player_02";
+	displayName = "LocKey#95758";
+}
+
+v_sportbike1_yaiba_kusanagi_player_03 : v_sportbike1_yaiba_kusanagi_tyger
+{
+	destroyedAppearance = "yaiba_kusanagi_basic_burnt_player_03";
+	savable = true;
+	fk< UIIcon > icon = "UIIcon.yaiba_player_03";
+	appearanceName = "yaiba_kusanagi_basic_player_03";
+	displayName = "LocKey#95759";
+}
+
+v_sport1_quadra_sport_r7_netrunner : v_sport1_quadra_sport_r7_netrunner_01
+{
+	fk< UIIcon > icon = "UIIcon.quadra_sport_r7_netrunner";
+	savable = true;
+}
+
+v_sport1_quadra_sport_r7_player : v_sport1_quadra_sport_r7_rocket
+{
+	fk< UIIcon > icon = "UIIcon.quadra_sport_r7_chiaroscuro";
+	savable = true;
+}
+
+v_sport1_quadra_sport_r7_player_02 : v_sport1_quadra_sport_r7_rocket
+{
+	fk< UIIcon > icon = "UIIcon.quadra_sport_r7_vigilante";
+	displayName = "LocKey#93555";
+	savable = true;
+	appearanceName = "quadra_sport_r7_basic_player_02";
+	destroyedAppearance = "quadra_sport_r7_basic_burnt_player_02";
+}
+
+v_sport1_quadra_sport_r7_mrhands : v_sport1_quadra_sport_r7_gt
+{
+	fk< UIIcon > icon = "UIIcon.quadra_sport_r7_mrhands";
+	displayName = "LocKey#93144";
+	savable = true;
+	appearanceName = "quadra_sport_r7_basic_mr_hands_reward";
+}
+
+v_sport1_herrera_riptide_player : v_sport1_herrera_riptide_terrier
+{
+	fk< UIIcon > icon = "UIIcon.herrera_riptide";
+	savable = true;
+}
+
+v_sport2_villefort_alvarado_hearse_player : v_sport2_villefort_alvarado_hearse
+{
+	fk< UIIcon > icon = "UIIcon.villefort_alvarado_hearse";
+	savable = true;
+	appearanceName = "villefort_alvarado_hearse_01_basic_web_01";
+}
+
+v_standard2_mizutani_hozuki_player : v_standard2_mizutani_hozuki_sti
+{
+	fk< UIIcon > icon = "UIIcon.mizutani_hozuki";
+	savable = true;
+}
+
+v_standard25_thorton_merrimac_player : v_standard25_thorton_merrimac_pickup
+{
+	fk< UIIcon > icon = "UIIcon.thorton_merrimac_playere";
+	savable = true;
+}
+
+v_sport1_herrera_outlaw_heist_player : v_sport1_herrera_outlaw_heist
+{
+	fk< UIIcon > icon = "UIIcon.herrera_outlaw_heist_player";
+	savable = true;
+	appearanceName = "herrera_outlaw__heist_player_01";
+}
+
+v_sport2_villefort_deleon_player : v_sport2_villefort_deleon_vindicator
+{
+	fk< UIIcon > icon = "UIIcon.villefort_deleon";
+	savable = true;
+}
+
+v_standard3_militech_hellhound_player : v_standard3_militech_hellhound
+{
+	fk< UIIcon > icon = "UIIcon.militech_hellhound";
+	savable = true;
+	appearanceName = "militech_hellhound__basic_player_01";
+}
+
+v_standard3_makigai_tanishi_player : v_standard3_makigai_tanishi_kuma
+{
+	fk< UIIcon > icon = "UIIcon.makigai_tanishi_player_01";
+	savable = true;
+}
+
+v_standard3_makigai_tanishi_player_mr_hands : v_standard3_makigai_tanishi
+{
+	savable = true;
+	fk< UIIcon > icon = "UIIcon.makigai_tanishi_player_mr_hands";
+	appearanceName = "makigai_tanishi_basic_player_mr_hands";
+}
+
+v_standard3_mahir_supron_kurtz_player : v_standard3_mahir_supron_kurtz_overlander
+{
+	fk< UIIcon > icon = "UIIcon.v_standard3_mahir_supron_kurtz_player";
+	savable = true;
+}
+
+v_standard25_thorton_colby_pickup_kurtz_player : v_standard25_thorton_colby_pickup_kurtz
+{
+	fk< UIIcon > icon = "UIIcon.v_standard25_thorton_colby_pickup_kurtz_player";
+	savable = true;
+	appearanceName = "thorton_colby_pickup_kurtz_player_01";
+	statModifierGroups = 
+	[
+		"VehicleStatPreset.BaseCar", "VehicleStatPreset.Durable"
+	];
+}
+
+v_standard25_thorton_merrimac_web : v_standard25_thorton_merrimac
+{
+	savable = true;
+	appearanceName = "thorton_merrimac_basic_web_01";
+}
+
+v_standard2_mizutani_hozuki_web : v_standard2_mizutani_hozuki_premium
+{
+	savable = true;
+	appearanceName = "mizutani_hozuki__basic_web_01";
+}
+
+v_sport2_villefort_deleon_web : v_sport2_villefort_deleon
+{
+	savable = true;
+	appearanceName = "villefort_deleon_basic_web_01";
+}
+
+v_sport1_herrera_riptide_web : v_sport1_herrera_riptide
+{
+	savable = true;
+	appearanceName = "herrera_riptide__basic_web_01";
+}
+
+v_sport2_villefort_alvarado_hearse_web : v_sport2_villefort_alvarado_hearse
+{
+	savable = true;
+	appearanceName = "villefort_alvarado_hearse_01_basic_web_01";
+}
+
+v_sport1_quadra_sport_r7_web : v_sport1_quadra_sport_r7
+{
+	savable = true;
+	appearanceName = "quadra_sport_r7_basic_web_01";
+}
+
+v_sportbike2_arch_linas_player : v_sportbike2_arch_tyger
+{
+	savable = true;
+	entityTemplatePath = "ep1\vehicles\sportbike\v_sportbike2_arch_nemesis_lina_01.ent";
+	appearanceName = "arch_nemesis_lina_lina_malina_02";
+	displayName = "LocKey#94178";
+	fk< UIIcon > icon = "UIIcon.arch_nemesis_linamalina";
+	vehicleUIData = 
+	{
+		productionYear = "2069";
+		driveLayout = "LocKey#94190";
+		mass = 303.5f;
+		info = "LocKey#94191";
+	} : VehicleArchUIData;
+}
+
