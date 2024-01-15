@@ -28,7 +28,7 @@ Using the global search function of your ide is a good approach, trying to find 
 ### Create a mod (logic)
 
 Create a new folder with the new mod's name under `./mods`, e.g. `./mods/CarStealNoAngryOwner`.  
-Inside that, create an `info.json`, which is then in `./mods/CarStealNoAngryOwner/info.json` and contains this example:
+Then create `./mods/CarStealNoAngryOwner/info.json`, which  contains this example:
 
 ```json
 {
@@ -38,6 +38,6 @@ Inside that, create an `info.json`, which is then in `./mods/CarStealNoAngryOwne
     "customSounds":    [ ]
 }
 ```
-After the function to be modified has been found, the whole file containing it needs to be copied, including their relative path. So 
+After finding a function, which could make the game more fun by modification, the whole file containing it needs to be copied, including their relative path. So 
 ```cs
 ```
