@@ -170,6 +170,7 @@ Redscript is like an advanced version of redmod. It is able to replace only spec
 
 # Resources
 
+- https://cdn-l-cyberpunk.cdprojektred.com/REDmod-docs.pdf
 - https://github.com/jac3km4/redscript?tab=readme-ov-file
 - https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/redmod
 - https://forums.cdprojektred.com/index.php?threads/redmod-tutorials.11107406/
