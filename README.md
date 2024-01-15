@@ -12,7 +12,7 @@ First, get REDmod. It's a dlc for cyberpunk, which needs to be installed by goin
 - `./tools/redmod/scripts`
 - `./tools/redmod/tweaks`
 
-## Mod game-logic (scripts): REDmod
+## Mod using REDmod
 
 The reason, there is almost no info on how to create a redmod mod, is its huge drawback. If two mods try to modify the same file, it will conflict and the user needs to decide, which one to keep. However, here is how to do it.
 
@@ -25,7 +25,7 @@ Run the redmod.exe, click the gear (settings) and enable mods.
 The sub-folder `./tools/redmod/scripts` contains all the game-logic that cyberpunk runs on. These are mainly C# classes and functions, containing stuff like how much should it cost, if you want to respec your character (reset all perks).
 Using the global search function of your ide is a good approach, trying to find what is of interest and needs to be modded. In this case, searching for "respeccost" contained the following function in the results.
 
-### Create a mod (logic)
+### Create a mod (logic-manipulation)
 
 Create a new folder with the new mod's name under `./mods`, e.g. `./mods/NoRespecCost`.  
 Then create `./mods/NoRespecCost/info.json`, which  contains this example:
@@ -68,7 +68,9 @@ public const function GetTotalRespecCost() : Int32
 // ... Code after
 ```
 
-Now the mmodified copy of `playerDevelopmentSystem.script` needs to be placed in `./mods/NoRespecCost/scripts/playerDevelopmentSystem.script`, containing your change, as well as all the other code. The base source code file will essentially be overwritten with the modified one, so the other functions need to be kept in the modded file.
+Now the mmodified copy of `playerDevelopmentSystem.script` needs to be placed in `./mods/NoRespecCost/scripts/playerDevelopmentSystem.script`, containing the changed function, as well as all the other code.   
+The base source code file will essentially be overwritten with the modified one, so the other functions need to be kept in the modded file.
+As mentioned, the drawback is, lets say there are 2 different mods, manipulating the same file, one will get overwritten. This is where The next, superior method comes into play.
 
 
 
