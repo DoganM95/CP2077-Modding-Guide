@@ -137,8 +137,8 @@ Now the mmodified copy of `generic_vehicle_weapons.tweak` needs to be placed in 
 
 ### Conclusion on Redmod
 
-The base source code file will essentially be overwritten with the modified one, so the all the remaining unchanged code also needs to be kept in the modded file.  
-As mentioned, lets say there are 2 different mods, manipulating the same file, one will get overwritten. This is where The next, superior method comes into play.  
+- The base source code file will essentially be overwritten with the modified one, so the all the remaining unchanged code also needs to be kept in the modded file.  
+- Assuming there are 2 different mods, manipulating the same file, one will get overwritten. This is where The next, superior method comes into play.  
 
 ##Mod using Redscript
 
