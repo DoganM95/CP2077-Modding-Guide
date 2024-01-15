@@ -35,3 +35,5 @@ Inside that, create an `info.json`, which is then in `/mods/CarStealNoAngryOwner
 }
 ```
 After the function to be modified has been found, the whole file containing it needs to be copied, including their relative path. So 
+```cs
+```
