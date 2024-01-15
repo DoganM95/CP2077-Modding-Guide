@@ -4,7 +4,18 @@
 A comprehensive guide to modding Cyberpunk 2077, focusing on script and database modifications. It covers REDmod, advances to Redscript, and concludes with TweakXL.
 
 ## Preliminaries
-Root Directory Reference: `./` denotes the game's root directory, e.g., `C:/Games/Steam/Cyberpunk 2077/`.
+- **Root Directory Reference**: `./` denotes the game's root directory, e.g., `C:/Games/Steam/Cyberpunk 2077/`.
+
+## Setting Up and Modding with REDmod
+- **Installation**: Activate the REDmod DLC via the game's Steam settings.
+- **New Folders**: added by REDmod
+  - `./tools/redmod/bin`
+  - `./tools/redmod/scripts`
+  - `./tools/redmod/tweaks`
+- **Activation**: Launch `./tools/redmod/bin/redmod.exe`, access settings, and enable mods.
+
+
+
 
 # Getting started
 
