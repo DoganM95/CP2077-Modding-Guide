@@ -1,6 +1,6 @@
 # Intro
 
-Personal guide for cyberpunk 2077, to get started with modding by writing own scripts and db modifications.
+Personal guide for cyberpunk 2077, to get started with modding by writing own scripts and db modifications. The guide contains methods (redmod) that are not popular but necessary to do at least once, to understand how modding for this game works. Afterwards, the most state-of-the-art method can be used only and other methods be left behind, to ensure gradual learning.
 
 # Getting started
 
