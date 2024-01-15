@@ -162,6 +162,8 @@ Redscript is like an advanced version of redmod. It is able to replace only spec
   ```
   - Start the game and check if it kicks in
   - Check the [redscript docs](https://github.com/jac3km4/redscript) for more, e.g. `@addMethod` & `@wrapMethod`
+- **Extras**: Tools for convenience
+  - [redscript-ide-vscode](https://github.com/jac3km4/redscript-ide-vscode): vscode extension for syntax highlighting, definition peeking, autocompletion, etc.
 
 ## Database Manipulation with TweakXL
 
