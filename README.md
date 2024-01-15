@@ -1,7 +1,10 @@
-# Intro
+# Cyberpunk 2077 Modding Guide
 
-Personal guide for cyberpunk 2077, to get started with modding by writing own scripts and db modifications. The guide contains methods (redmod) that are not popular but necessary to do at least once, to understand how modding for this game works. Afterwards, the most state-of-the-art method can be used only and other methods be left behind, to ensure gradual learning.  
-- Every time `./` is used, it references the game's root directory, e.g. `C:/Games/Steam/Cyberpunk 2077/`
+## Intro
+A comprehensive guide to modding Cyberpunk 2077, focusing on script and database modifications. It covers REDmod, advances to Redscript, and concludes with TweakXL.
+
+## Preliminaries
+Root Directory Reference: `./` denotes the game's root directory, e.g., `C:/Games/Steam/Cyberpunk 2077/`.
 
 # Getting started
 
