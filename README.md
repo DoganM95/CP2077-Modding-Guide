@@ -140,6 +140,34 @@ Now the mmodified copy of `generic_vehicle_weapons.tweak` needs to be placed in 
 - The base source code file will essentially be overwritten with the modified one, so the all the remaining unchanged code also needs to be kept in the modded file.  
 - Assuming there are 2 different mods, manipulating the same file, one will get overwritten. This is where The next, superior method comes into play.  
 
-##Mod using Redscript
+## Mod using Redscript (logic-manipulation)
+
+Redscript is like an advanced version of redmod. It is able to replace only specific functions instead of whole files, making it alot more fine-granular and reducing conflict potential to a minimum.  
+Here are some key aspects:
+- Redscript usse a [swift-like syntax](https://wiki.redmodding.org/redscript/language/intro/redscript-in-2-minutes)
+- Files are saved with `.reds` extension
+- Documentation can be found [here](https://wiki.redmodding.org/redscript/)
+
+### Create a mod 
+
+Fist, [redscript needs to be downloaded](https://github.com/jac3km4/redscript) and installed by unpacking the latest release into the game directory. 
+
+Now to modifying the `GetTotalRespecCost()` function done above in redmod part, but the redscript way.  
+- First create a parent directory in `./r6/scripts`, in this case `./r6/scripts/NoRespecCost`
+- Create the file containing the mod, e.g. `./r6/scripts/NoRespecCost/freeRespec.reds`
+- Create a function to override the stock one, with only the following content:
+
+```swift
+// you can replace existing in-game methods by specifying the class they belong to
+@replaceMethod(PlayerDevelopmentData)
+public final const func GetTotalRespecCost -> Int32 {
+	return 0;
+}
+```
+
+Starting the game will now have the mod applied.  
+There are more annotations, that can be used to e.g. add a method instead od replacing it, or wrap it. More on that in the [redscript docs](https://github.com/jac3km4/redscript)
+
+## Mod using TweakXL (database-manipulation)
 
 
