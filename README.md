@@ -147,6 +147,7 @@ Now the mmodified copy of `generic_vehicle_weapons.tweak` needs to be placed in 
 ## Logic Manipulation with Redscript
 
 Redscript is like an advanced version of redmod. It is able to replace only specific functions instead of whole files, making it alot more fine-granular and reducing conflict potential to a minimum.  
+The example this time will be a working one, with visible effect ingame.
 - **Key aspects**:
   - Redscript uses a [swift-like syntax](https://wiki.redmodding.org/redscript/language/intro/redscript-in-2-minutes)
   - Files are saved with `.reds` extension
@@ -159,12 +160,12 @@ Redscript is like an advanced version of redmod. It is able to replace only spec
   - Create a function in it, to override the stock one using
   ```swift
   // you can replace existing in-game methods by specifying the class they belong to
-  @replaceMethod(PlayerDevelopmentData)
-  public final const func GetTotalRespecCost -> Int32 {
-  	return 0;
+  @replaceMethod(ReloadEvents)
+  protected const func GetReloadAnimSpeed ( const statType : gamedataStatType, weaponRecord : WeaponItem_Record ) -> Float {
+      return 100.0;
   }
   ```
-  - Start the game and check if it kicks in
+  - Start the game and check if it kicks in, this time the reload animation (only!) should be really quick
   - Check the [redscript docs](https://github.com/jac3km4/redscript) for more, e.g. `@addMethod` & `@wrapMethod`
 - **Extras**: Tools for convenience
   - [redscript-ide-vscode](https://github.com/jac3km4/redscript-ide-vscode): vscode extension for syntax highlighting, definition peeking, autocompletion, etc.
