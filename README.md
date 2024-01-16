@@ -152,7 +152,7 @@ Redscript is like an advanced version of redmod. It is able to replace only spec
   - Files are saved with `.reds` extension
   - Is state-of-the-art for script mods and replaces REDmod
 - **Installation**: [Download Redscript](https://github.com/jac3km4/redscript) and extract it directly into the Cyberpunk 2077 directory
-- **Setup**: Start the game for Redscript setup. Verify installation by checking for redscript_rCURRENT.log in `./r6/logs`
+- **Setup**: Start the game for Redscript setup. Verify installation by checking for `./r6/logs/redscript_rCURRENT.log`
 - **Usage**: Place Redscript mods in `./r6/scripts` for automatic loading
 - **Example**: Modding `GetTotalRespecCost()` the redscript way
   - Create a new file `./r6/scripts/NoRespecCost/freeRespec.reds`
