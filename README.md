@@ -170,7 +170,8 @@ The example this time will be a working one, with visible effect ingame.
 - **Extras**: Tools for convenience
   - [Redscript vscode extension guide]([https://github.com/jac3km4/redscript-ide-vscode](https://wiki.redmodding.org/redscript/getting-started/setting-up-redscript-and-vscode): for syntax highlighting, definition peeking, autocompletion, etc.
   - [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools): can reload archives, scripts and tweaks at runtime, making mod changes visible in realtime in the game
-    - [Red4ext](https://github.com/WopsS/RED4ext): a library that extends REDengine 4, allowing feature addition, game behaviour modification, etc. RedHotTools depends in this.
+    - [Red4ext](https://github.com/WopsS/RED4ext): a library that extends REDengine 4, allowing feature addition, game behaviour modification, etc.
+      RedHotTools depends in this.
 
 ## Database Manipulation with TweakXL
 
