@@ -155,8 +155,8 @@ The example this time will be a working one, with visible effect ingame.
 - **Installation**: [Download Redscript](https://github.com/jac3km4/redscript) and extract it directly into the Cyberpunk 2077 directory
 - **Setup**: Start the game for Redscript setup. Verify installation by checking for `./r6/logs/redscript_rCURRENT.log`
 - **Usage**: Place Redscript mods in `./r6/scripts` for automatic loading
-- **Example**: Modding `GetTotalRespecCost()` the redscript way
-  - Create a new file `./r6/scripts/NoRespecCost/freeRespec.reds`
+- **Example**: Modding `GetReloadAnimSpeed()` the redscript way
+  - Create a new file `./r6/scripts/SpeedyReloadAnimation/freeRespec.reds`
   - Create a function in it, to override the stock one using
   ```swift
   // you can replace existing in-game methods by specifying the class they belong to
@@ -168,7 +168,7 @@ The example this time will be a working one, with visible effect ingame.
   - Start the game and check if it kicks in, this time the reload animation (only!) should be really quick
   - Check the [redscript docs](https://github.com/jac3km4/redscript) for more, e.g. `@addMethod` & `@wrapMethod`
 - **Extras**: Tools for convenience
-  - [redscript-ide-vscode](https://github.com/jac3km4/redscript-ide-vscode): vscode extension for syntax highlighting, definition peeking, autocompletion, etc.
+  - [redscript vscode extension guide]([https://github.com/jac3km4/redscript-ide-vscode](https://wiki.redmodding.org/redscript/getting-started/setting-up-redscript-and-vscode)): for syntax highlighting, definition peeking, autocompletion, etc.
 
 ## Database Manipulation with TweakXL
 
