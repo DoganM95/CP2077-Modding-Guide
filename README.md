@@ -191,12 +191,12 @@ It allows even more fine-grained control over mods that overlap, e.g. by merging
       HandgunPossibleScopesList : SlotItemPartListElement
       {
           slot = "AttachmentSlots.Scope";
-	  itemPartList = 
-	  [
-	      {
-	          item = "Items.w_att_scope_short_01";
-	      },
-          // ...
+          itemPartList = 
+          [
+              {
+                  item = "Items.w_att_scope_short_01";
+              },
+              // ...
           ]
       }
       // ... 
