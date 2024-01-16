@@ -185,10 +185,7 @@ It allows even more fine-grained control over mods that overlap, e.g. by merging
 - **Usage**: Place TweakXL mods in `./r6/tweaks` for automatic loading
 - **Example**: Modding `HandgunPossibleScopesList` the tweakxl way, so sniper and rifle scopes become attachable to handguns
   - Taking a look at `../tools/redmod/tweaks/base/gameplay/static_data/database/items/weapons/ranged/bases/base_handgun.tweak` reveals the following
-    - `Items` is the package, see line 1: `package Items`
-    - `HandgunPossibleScopesList` is the object, that contains the scopes, which can be attached, see line: 618
-    - `itemPartList` is the array, containing the actual strings, which define the scopes, see line: 628
-    - ```csharp
+    ```csharp
       package Items
       // ...
       HandgunPossibleScopesList : SlotItemPartListElement
@@ -204,7 +201,11 @@ It allows even more fine-grained control over mods that overlap, e.g. by merging
       }
       // ... 
       ```
-  - Create the file `./r6/tweaks/HandgunScopes.yaml`, the name can be anything, but should make sense
+    - `Items` is the package, see line 1: `package Items`
+    - `HandgunPossibleScopesList` is the object, that contains the scopes, which can be attached, see line: 618
+    - `itemPartList` is the array, containing the actual strings, which define the scopes, see line: 628
+
+  - To mod this, create the file `./r6/tweaks/HandgunScopes.yaml`, the name can be anything, but should make sense
   - Put the following content in it:
     ```yaml
     Items.HandgunPossibleScopesList:
@@ -213,6 +214,8 @@ It allows even more fine-grained control over mods that overlap, e.g. by merging
         - !append-from Items.SniperPossibleScopesList.itemPartList
     ```
   - The created `yaml` structure here reflects the `C#` data structure
+  - The game can now be started and wild scopes should be attachable to handguns
+  - More examples can be found in the [TweakXL examples](https://github.com/psiberx/cp2077-tweak-xl/wiki/Examples)
 
 # Resources
 
