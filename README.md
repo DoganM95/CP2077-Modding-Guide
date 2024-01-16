@@ -15,7 +15,9 @@ A comprehensive guide to modding Cyberpunk 2077, focusing on script and database
   - `./tools/redmod/bin`
   - `./tools/redmod/scripts`
   - `./tools/redmod/tweaks`
-- **Activation**: Launch `./REDprelauncher.exe`, access settings (cogwheel), and enable mods
+- **Activation**: two options  
+  a) **Automatic**: Set game launch options in steam to `-modded --launcher-skip`   
+  b) **Manual**: Launch `./REDprelauncher.exe`, access settings (cogwheel), and enable mods  
 
 
 ### Logic-Manipulation Mod
