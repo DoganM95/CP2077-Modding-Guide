@@ -10,6 +10,8 @@ A comprehensive guide to modding Cyberpunk 2077, focusing on script and database
 
 ## Setting Up and Modding with REDmod
 
+The following mods for REDmod are pseudo-mods and just illustrate how modding would work. The mods are probably not practically usable in the game.
+
 - **Installation**: Activate the REDmod DLC via the game's Steam settings.
 - **New Folders**: added by REDmod
   - `./tools/redmod/bin`
