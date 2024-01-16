@@ -75,7 +75,6 @@ class VehiclesManagerPopupGameController extends BaseModalListPopupGameControlle
 		}
 	}
 
-	// TODO: may be possible to create a custom hide function for trash vehicles
 	private function ToggleFavorite()
 	{
 		var selectedVehicle : VehiclesManagerListItemController;

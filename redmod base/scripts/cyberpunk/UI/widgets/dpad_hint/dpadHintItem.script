@@ -640,7 +640,6 @@ class CarHotkeyController extends GenericHotkeyController
 		ResolveState();
 	}
 
-	// TODO: set this to always enable vehicle to be callable
 	protected override function IsAllowedByGameplay() : Bool
 	{
 		if( !( VehicleSystem.IsSummoningVehiclesRestricted( GetPlayer().GetGame() ) ) )

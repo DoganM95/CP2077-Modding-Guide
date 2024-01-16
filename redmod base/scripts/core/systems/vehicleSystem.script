@@ -44,7 +44,6 @@ import class VehicleSystem extends IVehicleSystem
 		return player.GetPlayerStateMachineBlackboard().GetBool( GetAllBlackboardDefs().PlayerStateMachine.MountedToVehicle );
 	}
 
-	// TODO: disable usage of this
 	public static function IsSummoningVehiclesRestricted( game : GameInstance ) : Bool
 	{
 		var blackboard : IBlackboard;
