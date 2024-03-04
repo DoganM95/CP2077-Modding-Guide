@@ -153,7 +153,7 @@ The example this time will be a working one, with visible effect ingame.
   - Redscript uses a [swift-like syntax](https://wiki.redmodding.org/redscript/language/intro/redscript-in-2-minutes)
   - Files are saved with `.reds` extension
   - Is state-of-the-art for script mods and replaces REDmod
-- **Installation**: [Download Redscript](https://github.com/jac3km4/redscript) and extract it directly into the Cyberpunk 2077 directory
+- **Installation**: [Download Redscript]([https://github.com/jac3km4/redscript](https://github.com/jac3km4/redscript/releases)) and extract it directly into the Cyberpunk 2077 directory
 - **Setup**: Start the game for Redscript setup. Verify installation by checking for `./r6/logs/redscript_rCURRENT.log`
 - **Usage**: Place Redscript mods in `./r6/scripts` for automatic loading
 - **Example**: Modding `GetReloadAnimSpeed()` the redscript way
