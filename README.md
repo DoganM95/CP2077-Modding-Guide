@@ -217,18 +217,18 @@ It allows even more fine-grained control over mods that overlap, e.g. by merging
   - The game can now be started and wild scopes should be attachable to handguns
   - More examples can be found in the [TweakXL examples](https://github.com/psiberx/cp2077-tweak-xl/wiki/Examples)
 
-# Resources
+## Resources
 
 - [Guide on using mods on redmodding.org](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077)
 - [Collection of mod tools](https://github.com/stars/DoganM95/lists/game-tools-cyberpunk)
 
-## Wiki pages
+### Wiki pages
 
 - [Wiki of Redscript on redmodding.org](https://wiki.redmodding.org/redscript/)
 - [Wiki of Wolvenkit on redmodding.org](https://wiki.redmodding.org/wolvenkit/readme)
 - [Wiki of REDmod on redmodding.ord](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/redmod)
+
+### Other
+
 - [Page of REDmod by CDPR](https://www.cyberpunk.net/en/modding-support)
-
-## Other
-
 - [REDmod tutorials by CDPR](https://forums.cdprojektred.com/index.php?threads/redmod-tutorials.11107406)
