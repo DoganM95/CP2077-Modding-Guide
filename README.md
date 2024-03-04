@@ -219,8 +219,8 @@ It allows even more fine-grained control over mods that overlap, e.g. by merging
 
 # Resources
 
-- https://cdn-l-cyberpunk.cdprojektred.com/REDmod-docs.pdf
-- https://github.com/jac3km4/redscript?tab=readme-ov-file
-- https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/redmod
-- https://forums.cdprojektred.com/index.php?threads/redmod-tutorials.11107406/
-- https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077
+- [Official REDmod page by CDPR](https://www.cyberpunk.net/en/modding-support)
+- [Repo of redscript](https://github.com/jac3km4/redscript?tab=readme-ov-file)
+- [Redmod wiki on redmodding.ord](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/redmod)
+- [REDmod tutorials by CDPR](https://forums.cdprojektred.com/index.php?threads/redmod-tutorials.11107406)
+- [Guide on using mods on redmodding.org](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077)
